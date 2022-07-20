@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+      runtime-versions:
+        java: corretto17
+  build:
+    commands:
+      - chmod +x gradlew
+      - ./gradlew clean bootJar --stacktrace
+artifacts:
+  files:
+    - build/libs/*.jar
+    - scripts/*.sh
+    - appspec.yml
+  discard-paths: yes
