@@ -12,8 +12,8 @@ public class CustomersController {
 
     @GetMapping
     public ResponseEntity<CustomerModel[]> findAll(){
-        CustomerModel[] customers = new CustomerModel[]{
-                new CustomerModel("Felipe Toscano")
+        CustomerModel[] customers = new CustomerModel[] {
+            new CustomerModel(1, "Felipe", "Silva", "felipetoscano02@gmail.com")
         };
 
         return ResponseEntity.ok(customers);
