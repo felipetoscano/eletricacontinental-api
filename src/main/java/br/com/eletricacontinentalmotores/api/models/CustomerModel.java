@@ -1,26 +1,30 @@
 package br.com.eletricacontinentalmotores.api.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "customers")
 public class CustomerModel {
 
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
-    private long cellphone;
+
+    @Column(name = "cellphone")
+    private String cellphone;
+
+    @Column(name = "email")
     private String email;
 
-    public CustomerModel(int id, String firstName, String lastName, long cellphone, String email) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.cellphone = cellphone;
-        this.email = email;
-    }
+    public CustomerModel(){
 
-    public CustomerModel(int id, String firstName, String lastName, String email) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
     }
 
     public int getId() {
@@ -47,11 +51,11 @@ public class CustomerModel {
         this.lastName = lastName;
     }
 
-    public long getCellphone() {
+    public String getCellphone() {
         return cellphone;
     }
 
-    public void setCellphone(long cellphone) {
+    public void setCellphone(String cellphone) {
         this.cellphone = cellphone;
     }
 
