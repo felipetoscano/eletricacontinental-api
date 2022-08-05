@@ -1,17 +1,5 @@
 version: 0.2
 
-env:
-  secrets-manager:
-    DB_USERNAME: secret/db_eletricacontinentalmotores:username
-    DB_PASSWORD: secret/db_eletricacontinentalmotores:password 
-    DB_HOST: secret/db_eletricacontinentalmotores:host
-    DB_PORT: secret/db_eletricacontinentalmotores:port  
-  exported-variables:
-    - DB_USERNAME
-    - DB_PASSWORD
-    - DB_HOST
-    - DB_PORT
-
 phases:
   install:
       runtime-versions:
