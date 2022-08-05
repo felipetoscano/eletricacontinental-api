@@ -2,6 +2,7 @@ package br.com.eletricacontinentalmotores.api.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -24,7 +25,7 @@ public class CustomerModel {
     private String lastName;
 
     @NotNull
-    @Size(min = 11, max = 11, message = "O celular deve ter 11 caracteres.")
+    @Pattern(regexp="^\\d{11}",message="O celular deve ter 11 números")
     @Column(name = "cellphone")
     private String cellphone;
 
