@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "dd0341e3-276c-4a8c-90da-8827912207c5",
+		"name": "EletricaContinental",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12375904"
+	},
+	"item": [
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url_base}}:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"{{url_base}}"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url_base}}:8080/api/customers/1",
+							"protocol": "http",
+							"host": [
+								"{{url_base}}"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Felipe\",\r\n    \"lastName\": \"Silva\",\r\n    \"cellphone\": \"11910194003\",\r\n    \"email\": \"felipetoscano02@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url_base}}:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"{{url_base}}"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Marcia\",\r\n    \"lastName\": \"Silva\",\r\n    \"cellphone\": \"11999371558\",\r\n    \"email\": \"maregina0008@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url_base}}:8080/api/customers/2",
+							"protocol": "http",
+							"host": [
+								"{{url_base}}"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Marcia\",\r\n    \"lastName\": \"Silva\",\r\n    \"cellphone\": \"11999371557\",\r\n    \"email\": \"maregina0007@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url_base}}:8080/api/customers/3",
+							"protocol": "http",
+							"host": [
+								"{{url_base}}"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
