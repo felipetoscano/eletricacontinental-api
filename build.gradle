@@ -20,6 +20,7 @@ dependencies {
 	implementation 'javax.validation:validation-api'
 	implementation 'org.hibernate:hibernate-validator:7.0.5.Final'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.7.2'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
