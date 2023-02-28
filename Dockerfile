@@ -7,7 +7,7 @@ RUN gradle build
 
 # Package stage
 
-FROM openjdk:17-alpine
+FROM public.ecr.aws/docker/library/openjdk:19-jdk-alpine
 ENV JAR_NAME=api-0.0.1-SNAPSHOT.jar
 ENV APP_HOME=/home/app/
 WORKDIR $APP_HOME
