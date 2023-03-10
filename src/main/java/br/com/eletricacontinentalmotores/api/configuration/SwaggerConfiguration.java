@@ -56,7 +56,7 @@ public class SwaggerConfiguration {
     private ApiInfo apiInfo() {
         return new ApiInfo(
                 "Elétrica Continental Motores API",
-                "API responsável por gerenciar os dados da empresa",
+                "API responsável por gerenciar os dados de clientes da empresa",
                 "v1",
                 "",
                 new Contact("Felipe Toscano", "", "felipetoscano02@gmail.com"),
