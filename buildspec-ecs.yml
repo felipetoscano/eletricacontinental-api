@@ -18,5 +18,5 @@ phases:
       - docker push $ECR_REPOSITORY:latest
       - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $ECR_REPOSITORY:latest > imageDefinition.json
 
-  artifacts:
-    files: imageDefinition.json
+artifacts:
+  files: imageDefinition.json
