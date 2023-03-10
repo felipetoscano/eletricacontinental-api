@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  pre_build:
+    commands:
+      - ECR_REPOSITORY="517212389074.dkr.ecr.us-east-1.amazonaws.com/eletricacontinental-api-images"
+      - $(aws ecr get-login --no-include-email --region us-east-1)
+  build:
+    commands:
+      - docker build -t eletricacontinental-api-images .
+      - docker tag eletricacontinental-api-images:latest $ECR_REPO:latest
+  post_build:
+    commands:
+      - docker push $ECR_REPO:latest
