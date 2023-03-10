@@ -7,11 +7,11 @@ phases:
   pre_build:
     commands:
       - ECR_REPOSITORY="517212389074.dkr.ecr.us-east-1.amazonaws.com/eletricacontinental-api-images"
-      - $(aws ecr get-login --no-include-email --region us-east-1)
+      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
   build:
     commands:
-      - docker build -t eletricacontinental-api-images .
-      - docker tag eletricacontinental-api-images:latest $ECR_REPO:latest
+      - docker build -t eletricacontinental-api-images:latest .
+      - docker tag eletricacontinental-api-images:latest $ECR_REPOSITORY:latest
   post_build:
     commands:
-      - docker push $ECR_REPO:latest
+      - docker push $ECR_REPOSITORY:latest
