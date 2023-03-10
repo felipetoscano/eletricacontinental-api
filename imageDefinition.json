@@ -1,6 +1,0 @@
-[
-    {
-      "name": "eletricacontinental-api-container",
-      "imageUri": "517212389074.dkr.ecr.us-east-1.amazonaws.com/eletricacontinental-api-images:latest"
-    }
-  ]
