@@ -6,7 +6,7 @@ Utilizado apenas para estudos de Java e AWS.
 
 ## TODOs
 
-[] Implementar testes unitários
-[] Implementar testes de integração
-[] Implementar autenticação
-[] Implementar padrões transacionais
+* [ ] Implementar testes unitários
+* [ ] Implementar testes de integração
+* [ ] Implementar autenticação
+* [ ] Implementar padrões transacionais
