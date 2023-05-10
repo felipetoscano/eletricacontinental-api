@@ -1,4 +1,4 @@
-# eletricacontinental-api
+# API Elétrica Continental
 
 Projeto destinado a gerenciar as informações da empresa Elétrica Continental.
 
